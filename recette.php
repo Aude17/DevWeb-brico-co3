@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Fortunel Alizé, Trepos Pauline, Estelle Roudet, Laverton Agath, Aude Souchon">
     <title>Brico & co</title>
-<title>Brico & co</title>
 
     <style>
-		
         body {
             font-size: 16px;
             color: #666;
@@ -25,7 +23,7 @@
             margin-bottom: 20px;
         }
 
-        .categorie, 
+        .categorie,
         .difficulte,
         .temps {
             float: left;
@@ -54,13 +52,13 @@
             color: white;
             font-family: cursive;
             max-height: 600px;
-            margin right:10 px;
+            margin-right: 10px;
         }
 
         .etapes {
             background-color: #2D9988;
             font-size: 12px;
-            float:right;
+            float: right;
             padding-top: 10px;
             padding-bottom: 20px;
             width: 53%;
@@ -68,8 +66,9 @@
             color: white;
             font-family: cursive;
             max-height: 600px;
-            margin right:10 px;
+            margin-right: 10px;
         }
+
         .comments {
             margin-top: 130px;
             padding: 10px;
@@ -99,81 +98,82 @@
             margin-bottom: 8px;
         }
 
-.comments .comment {
-  border-bottom: 1px solid #ccc;
-}
+        .comments .comment {
+            border-bottom: 1px solid #ccc;
+        }
 
-.commentaires {
-  text-align: right;
-}
-.date {
-  color: gray;
-}
+        .commentaires {
+            text-align: right;
+        }
 
-.content {
-  /* Styles pour le contenu du commentaire */
-}
+        .date {
+            color: gray;
+        }
 
-.note {
-    display: inline-block;
-     
-}
+        .content {
+            /* Styles pour le contenu du commentaire */
+        }
 
-form {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #F5F5DC;
-  border-radius: 4px;
-  front family:cursive;
-}
+        .note {
+            display: inline-block;
+        }
 
-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #F5F5DC;
+            border-radius: 4px;
+            front family: cursive;
+        }
 
-form input[type="text"],
-form textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  font-size: 14px;
-}
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
 
-form input[type="submit"] {
-  display: inline-block;
-  background-color: #2D9988;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  margin-top: 10px;
-  cursor: pointer;
-  border: none;
-}
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
 
-form input[type="submit"]:hover {
-  background-color: #2D9988;
-}
+        form input[type="submit"] {
+            display: inline-block;
+            background-color: #2D9988;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+        }
 
-form .error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-}
+        form input[type="submit"]:hover {
+            background-color: #2D9988;
+        }
 
-.img {
-		text-align: center;
-	}
+        form .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        .image {
+			text-align: center;
+            padding-top: 50px;
+            font-size: 100px;
+            padding-bottom: 30px;
+            display: inline-block;
+            width: 60%;
+            margin-right: 100px;
+            margin-left: -1px
+        }
 
-	.img img {
-		display: block;
-		max-width: 100%;
-		height: 100%;
-		margin: 0;
-	}
     </style>
 </head>
 
@@ -200,7 +200,7 @@ form .error {
                 echo "<div class='temps'>" . $ligne[7] . "</div>";
                 echo "<div class='difficulte'>" . $ligne[3] . "</div>";
                 echo "<div class='id'>" . $ligne[1] . "</div>";
-                echo "<div class='img'><img src='" . $ligne[6] . "' alt='img'></div>";
+                echo "<div class='image'><img src='" . $ligne[6] . "' alt='img'></div>";
                 echo "<div class='materiaux'>" . nl2br(str_replace('-', '<br><br>', $ligne[5])) . "</div>";
                 echo "<div class='etapes'>" . nl2br(str_replace('-', '<br><br>', $ligne[4])) . "</div>";
             }
