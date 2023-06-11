@@ -141,7 +141,7 @@ body {
   <img src="images/table.jpeg" alt="Table 1">
 </div>
 <div class="bar3">
-  <img src="images/bibio.jpeg" alt="Biblio 1">
+  <img src="images/biblio.jpeg" alt="Biblio 1">
 </div>
 
 <br><br><br><br><br><br><br><br>
