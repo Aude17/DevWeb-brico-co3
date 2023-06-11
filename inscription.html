@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Fortunel Alizé, Trepos Pauline, Estelle Roudet, Laverton Agath, Aude Souchon">
+	<title>Inscription newsletter</title>
+
+<style>
+
+	body {
+		font-size: 16px;
+		color: #666;
+		background-color: #F5F5DC;
+	}
+
+	h1 {
+	    font-size: 32px;
+	    color: #333;
+	    text-align: center;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	}
+
+	label {
+	  display: block;
+	  margin-bottom: 10px;
+	  font-weight: bold;
+	}
+
+	input[type="email"],
+	input[type="text"] {
+	  display: block;
+	  padding: 10px;
+	  border-radius: 5px;
+	  border: 1px solid #ccc;
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+
+	input[type="submit"] {
+	  background-color: #2D9988;
+	  color: white;
+	  padding: 10px 20px;
+	  border: none;
+	  border-radius: 5px;
+	  cursor: pointer;
+	}
+
+</style>
+</head>
+
+<body>
+
+<object data="entete.html" width="100%"></object>
+<br><br>
+
+
+	<h1>Inscription à la newsletter</h1>
+	<form action="traitement-newsletter.php" method="post">
+		<label for="email">Adresse email :</label>
+		<input type="email" id="email" name="email" required>
+		<label for="nom">Nom :</label>
+		<input type="text" id="nom" name="nom" required>
+		<label for="prenom">Prénom :</label>
+		<input type="text" id="prenom" name="prenom" required>
+		<input type="submit" value="S'inscrire">
+	</form>
+
+<br><br><br>
+<object data="footer.html" width="100%" height="500px"></object>
+
+</body>
+</html>
